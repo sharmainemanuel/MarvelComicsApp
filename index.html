@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Marvel Comics - Fan Facts</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #ee171f;
+        }
+        /* label focus color */
+        .input-field input[type=text]:focus + label {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <main>
+        
+        <div class="container-fluid">
+            <div class="container">
+                <div class="top__margin">
+                    
+                    <img src="img/marvel.png" class="img img-responsive" width="100%" height="auto">
+                    <br><br>
+                    <form class="form">                        
+                        <div class="row ">
+                            <div class="input-field col-12">
+                                <input id="username" type="text" class="form-control" placeholder="Username">  
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="input-field col-12">
+                                <input id="first_name2" type="text" class="form-control" placeholder="Firstname">  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-12">
+                                <input id="last_name" type="text" class="form-control" placeholder="Lastname">  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-12">
+                                <input id="email" type="email" class="form-control" placeholder="Email">  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-12">
+                                <button type="button" class="btnReg btn btn-block btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.btnReg').click(function(){
+                    var username = $('#username').val();
+                    console.log(username)
+                    localStorage.setItem("user",username)
+                    location.href = "home.html";
+                });
+            });
+            
+        </script>
+        
+    </body>
+    
+    </html>
+    

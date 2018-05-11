@@ -1,0 +1,33 @@
+/* Your custom styles */
+.top__margin{
+    margin-top: 15%;
+}
+.bottom___margin{
+    margin-bottom: 15%;
+}
+.card-content {
+    padding: 10px;
+}
+
+span.card-title{
+    padding: 10px;
+    color: #810000;
+    font-size: 16pt;
+    font-weight: 600;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+.card-action{
+    padding: 0px 10px;
+}
+p.hero-content {
+    font-size: 10pt;
+}
+span.hero-label {
+    font-size: 10pt;
+    font-weight: bold;
+}
+p.hero-text {
+    font-size: 10.5pt;
+    font-weight: 400;
+}
